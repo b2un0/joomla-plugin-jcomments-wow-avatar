@@ -37,7 +37,7 @@
 			</fieldset>
 		</fields>
 	</config>
-	<!--<updateservers>
-		<server type="extension" priority="1" name="Kunena - WoW Avatar">http://www.z-index.net/en/joomla-world-of-warcraft-extensions/jcomments-wow-avatars/updatestream.xml</server>
-	</updateservers>-->
+	<updateservers>
+		<server type="extension" priority="1" name="Kunena - WoW Avatar">http://www.z-index.net/en/joomla-world-of-warcraft-extensions/jcomments-wow-avatar/updatestream.xml</server>
+	</updateservers>
 </extension>
