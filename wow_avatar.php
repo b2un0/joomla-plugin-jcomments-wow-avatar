@@ -13,8 +13,14 @@ class plgJCommentsWoW_Avatar extends JPlugin {
 
 	public function __construct(&$subject, $config){
 		parent::__construct($subject, $config);
-		$this->params->set('guild', rawurlencode(JString::strtolower($this->params->get('guild'))));
-		$this->params->set('realm', rawurlencode(JString::strtolower($this->params->get('realm'))));
+		if(version_compare(JVERSION, 3, '>=')) {
+			$this->params->set('guild', rawurlencode(JString::strtolower($this->params->get('guild'))));
+			$this->params->set('realm', rawurlencode(JString::strtolower($this->params->get('realm'))));
+		}else{
+			$this->params->set('realm', str_replace(array('%20', ' '), '-', $this->params->get('realm')));
+			$this->params->set('guild', str_replace(array('%20', ' '), '%2520', $this->params->get('guild')));
+		}
+		
 		$this->params->set('region', JString::strtolower($this->params->get('region')));
 	}
 
