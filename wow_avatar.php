@@ -40,10 +40,10 @@ class plgJCommentsWoW_Avatar extends JPlugin {
 			
 		foreach($comments as &$comment) {
 			$name = $comment->{ $this->params->get('mapping', 'name') };
-			$name = JFilterOutput::stringURLSafe($name);
+			$name = JString::strtolower($name);
 		
 			foreach($members as $member) {
-				if($name == strtolower(JFilterOutput::stringURLSafe($member->character->name))) {
+				if($name == JString::strtolower($member->character->name)) {
 					$url = 'http://' . $this->params->get('region') . '.battle.net/static-render/' . $this->params->get('region') . '/' . $member->character->thumbnail;
 					$comment->avatar = JHtml::_('image', $url, '');
 					break;
