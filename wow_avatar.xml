@@ -8,7 +8,7 @@
     <authorEmail>branko.wilhelm@gmail.com</authorEmail>
     <authorUrl>www.z-index.net</authorUrl>
     <version>@REVISION@</version>
-    <description>load player Avatars directly from battle.net.</description>
+    <description>load player avatars directly from battle.net</description>
     <files>
         <filename plugin="wow_avatar">wow_avatar.php</filename>
     </files>
@@ -26,7 +26,7 @@
                 <field name="guild" type="text" default="" size="30" required="true" label="Guild" />
                 <field name="realm" type="text" default="" size="30" required="true" label="Realm" />
                 <field name="region" type="list" default="" required="true" label="Region">
-                    <option value="">-- select --</option>
+                    <option value="">JSELECT</option>
                     <option value="us">USA</option>
                     <option value="eu">Europe</option>
                     <option value="kr">Korea</option>
