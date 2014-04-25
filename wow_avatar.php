@@ -11,7 +11,6 @@ defined('_JEXEC') or die;
 
 class plgJCommentsWoW_Avatar extends JPlugin
 {
-
     public function __construct(&$subject, $config)
     {
         parent::__construct($subject, $config);
@@ -63,7 +62,7 @@ class plgJCommentsWoW_Avatar extends JPlugin
 
         $cache = JFactory::getCache('wow', 'output');
         $cache->setCaching(1);
-        $cache->setLifeTime($this->params->get('cache_time', 60));
+        $cache->setLifeTime($this->params->get('cache_time', 60) * 60);
 
         $key = md5($url);
 
