@@ -3,7 +3,7 @@
     <name>JComments - WoW Avatar</name>
     <author>Branko Wilhelm</author>
     <creationDate>Jul 2013</creationDate>
-    <copyright>Copyright (C) 2013 - 2014 Branko Wilhelm. All rights reserved.</copyright>
+    <copyright>Copyright (c) 2013 - 2015 Branko Wilhelm. All rights reserved.</copyright>
     <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
     <authorEmail>branko.wilhelm@gmail.com</authorEmail>
     <authorUrl>www.z-index.net</authorUrl>
@@ -23,20 +23,6 @@
                     <option value="name">Name</option>
                     <option value="username">Username</option>
                 </field>
-                <field name="guild" type="text" default="" size="30" required="true" label="Guild" />
-                <field name="realm" type="text" default="" size="30" required="true" label="Realm" />
-                <field name="region" type="list" default="" required="true" label="Region">
-                    <option value="">JSELECT</option>
-                    <option value="us">USA</option>
-                    <option value="eu">Europe</option>
-                    <option value="kr">Korea</option>
-                    <option value="tw">Taiwan</option>
-                    <option value="sea">Southeast Asia</option>
-                </field>
-            </fieldset>
-            <fieldset name="advanced">
-                <field name="cache_time" type="text" filter="integer" default="60" size="5" required="true" label="Cache" description="How many minutes elapse until armory data is reloaded." />
-                <field name="timeout" type="text" filter="integer" default="10" size="5" required="true" label="Timeout" description="Maximum waiting time for armory server answer (in seconds)." />
             </fieldset>
         </fields>
     </config>
